@@ -1,0 +1,49 @@
+/* Reset CSS */
+/* Aplica um box-sizing consistente a todos os elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove margens e preenchimentos padrão */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove estilos de lista padrão */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove decoração de link padrão */
+a {
+  text-decoration: none;
+}
+
+/* Define font-size base e estilo de fonte */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
