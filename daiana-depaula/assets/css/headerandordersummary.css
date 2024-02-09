@@ -1,4 +1,3 @@
-.container-nav,
 #shipping,
 #payment {
   display: none;
@@ -92,12 +91,8 @@ main .container {
   height: 100%;
 }
 
-/* order */
+/* resumo do pedido */
 #order-summary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(100vh - 80px);
   height: 100%;
   width: 484px;
 }

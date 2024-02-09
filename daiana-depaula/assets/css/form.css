@@ -1,0 +1,105 @@
+section {
+  display: flex;
+	justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 623px;
+}
+
+form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--dark-10);
+  margin-bottom: 48px;
+}
+
+/* detalhes da conta */
+
+#account .details-account{
+	display: flex;
+	flex-direction: column;
+}
+
+#account .details-account label{
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--dark-30);
+	margin-bottom: 8px;
+}
+
+#account .details-account input{
+	width: 100%;
+	height: 57px;
+	padding: 20px;
+	font-size: 1.4rem;
+	color: var(--dark-10);
+	border-radius: 4px;
+	background-color: var(--dark-50);
+	border: 1px solid var(--dark-40);
+	outline: none;
+	margin-bottom: 20px;
+}
+
+
+#account .btn-subscription{
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin: 40px 0;
+}
+
+#account .btn-subscription a{
+	padding: 18px 24px;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--dark-10);
+	background-color: var(--white);
+}
+
+#account .btn-subscription button{
+	padding: 18px 24px;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	background-color: var(--brand-color);
+	color: #F7FAFC;
+	border: none;
+}
+
+#account hr{
+	border: 1px solid #E2E8F0;
+}
+
+#account .btn-buy{
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin: 40px 0;
+}
+
+#account .btn-buy a{
+	padding: 18px 24px;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #D1402C;
+	background-color: var(--white);
+}
+
+#account .btn-buy button{
+	padding: 18px 24px;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	background-color: var(--brand-color);
+	color: #F7FAFC;
+	border: none;
+}

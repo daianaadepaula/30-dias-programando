@@ -21,7 +21,8 @@
 
 	<link rel="stylesheet" href="./assets/css/reset.css">
 	<link rel="stylesheet" href="./assets/css/variables.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/headerandordersummary.css">
+	<link rel="stylesheet" href="./assets/css/form.css">
 </head>
 
 <body>
@@ -56,57 +57,104 @@
 
 		<div class="container">
 
-			<section id="account">
+			<section>
 
-				<form>
-					<h2>Detalhes da conta</h2>
-					<label for="email">Email</label>
-					<input type="email" name="email" id="">
+				<!-- detalhes da conta -->
 
-					<label for="password">Senha</label>
-					<input type="password" name="password" id="">
+				<form id="account">
+					<div class="details-account">
+						<h2>Detalhes da conta</h2>
 
-					<p>Registre-se para conta</p>
-					<input type="submit" value="Entrar">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="">
+
+						<label for="password">Senha</label>
+						<input type="password" name="password" id="">
+					</div>
+
+					<div class="btn-subscription">
+						<a href="#">Registre-se para conta</a>
+						<button type="submit">Entrar</button>
+					</div>
+
+					<hr>
+
+					<div class="btn-buy">
+						<a href="#">Cancelar Pedido</a>
+						<button type="submit">Continuar comprando</button>
+					</div>
 				</form>
 
-				<hr>
+				<!-- resumo do pedido -->
 
-				<div>
-					<a href="#">Cancelar Pedido</a>
-					<button>Continuar comprando</button>
+				<div id="order-summary">
+					<h2 class="order-title">Resumo do pedido</h2>
+					<img src="./assets/img/mouse.png" alt="Imagem do pedido">
+
+					<div class="description">
+						<p class="description-title">Mouse Gamer Readragon</p>
+						<div class="count-content">
+							<p class="price">R$ 15,00</p>
+
+							<div class="count">
+								<i class="fa-solid fa-minus"></i>
+								<p class="value">2</p>
+								<i class="fa-solid fa-plus"></i>
+							</div>
+
+						</div>
+
+						<div class="discount-input">
+							<input type="text" placeholder="Cupom de desconto">
+							<button class="btn-apply">Aplicar</button>
+						</div>
+
+						<div class="table-prices">
+							<div class="tax">
+								<p>Taxa</p>
+								<p>R$ 5,40</p>
+							</div>
+							<div class="shipping">
+								<p>Envio</p>
+								<p>Grátis</p>
+							</div>
+							<div class="total">
+								<p>Total</p>
+								<p>R$ 30,44</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
-			<section id="shipping">
+			<!-- detalhes do envio -->
+
+			<form id="shipping">
 				<h2>Detalhes do envio</h2>
+				<label for="address">Usar o endereço salvo</label>
+				<select name="options-address" id="">
+					<option value="Carlos Rodrigo, 345">Carlos Rodrigo, 345</option>
+					<option value="Rua Quinze de Novembro, 394">Rua Quinze de Novembro, 394</option>
+					<option value="Rua Tiradentes, 384">Rua Tiradentes, 384</option>
+				</select>
 
-				<form>
-					<label for="address">Usar o endereço salvo</label>
-					<select name="options-address" id="">
-						<option value="Carlos Rodrigo, 345">Carlos Rodrigo, 345</option>
-						<option value="Rua Quinze de Novembro, 394">Rua Quinze de Novembro, 394</option>
-						<option value="Rua Tiradentes, 384">Rua Tiradentes, 384</option>
-					</select>
+				<label for="city">Cidade</label>
+				<input type="text" name="city" id="">
+				<label for="street">Rua, Bairro</label>
+				<input type="text" name="street" id="">
+				<label for="number">Número</label>
+				<input type="number" name="number" id="">
 
-					<label for="city">Cidade</label>
-					<input type="text" name="city" id="">
-					<label for="street">Rua, Bairro</label>
-					<input type="text" name="street" id="">
-					<label for="number">Número</label>
-					<input type="number" name="number" id="">
+				<label for="state">Estado</label>
+				<select name="options-address" id="">
+					<option value="Sao Paulo">São Paulo</option>
+					<option value="Rio de Janeiro">Rio de Janeiro</option>
+					<option value="Curitiba">Curitiba</option>
+				</select>
 
-					<label for="state">Estado</label>
-					<select name="options-address" id="">
-						<option value="Sao Paulo">São Paulo</option>
-						<option value="Rio de Janeiro">Rio de Janeiro</option>
-						<option value="Curitiba">Curitiba</option>
-					</select>
+				<p>Registre-se para conta</p>
+				<input type="submit" value="Entrar">
 
-					<p>Registre-se para conta</p>
-					<input type="submit" value="Entrar">
-
-				</form>
 
 				<hr>
 
@@ -114,37 +162,36 @@
 					<a href="#">Cancelar Pedido</a>
 					<button>Continuar comprando</button>
 				</div>
+			</form>
 
-			</section>
+			<!-- detalhes de pagamento -->
 
-			<section id="payment">
+			<form id="payment">
 				<h2>Detalhes de envio</h2>
-				<form>
-					<label for="address">Usar o cartão salvo</label>
-					<select name="options-name" id="">
-						<option value="Iuri Souza Silva, 736327">Iuri Souza Silva, 736327</option>
-						<option value="Flavio Carlos Santos, 295929">Flávio Carlos Santos, 295929</option>
-						<option value="Amanda Carmago de Azevedo, 9043010">Amanda Carmago de Azevedo, 9043010</option>
-					</select>
+				<label for="address">Usar o cartão salvo</label>
+				<select name="options-name" id="">
+					<option value="Iuri Souza Silva, 736327">Iuri Souza Silva, 736327</option>
+					<option value="Flavio Carlos Santos, 295929">Flávio Carlos Santos, 295929</option>
+					<option value="Amanda Carmago de Azevedo, 9043010">Amanda Carmago de Azevedo, 9043010</option>
+				</select>
 
-					<label for="name-card">Nome no cartão</label>
-					<input type="text" name="name-card" id="" value="Iuri Souza Silva">
+				<label for="name-card">Nome no cartão</label>
+				<input type="text" name="name-card" id="" value="Iuri Souza Silva">
 
-					<label for="number-card">Número do cartão</label>
-					<input type="number" name="number-card" id="" value="123-456-789/0">
+				<label for="number-card">Número do cartão</label>
+				<input type="number" name="number-card" id="" value="123-456-789/0">
 
-					<label for="expiration">Expiração</label>
-					<input type="number" name="expiration" id="" value="03"><span>/</span>
-					<input type="number" name="expiration" id="" value="24">
+				<label for="expiration">Expiração</label>
+				<input type="number" name="expiration" id="" value="03"><span>/</span>
+				<input type="number" name="expiration" id="" value="24">
 
-					<label for="cvc">CVC</label>
-					<input type="number" name="cvc" id="" value="24">
+				<label for="cvc">CVC</label>
+				<input type="number" name="cvc" id="" value="24">
 
 
-					<p>Registre-se para conta</p>
-					<input type="submit" value="Entrar">
+				<p>Registre-se para conta</p>
+				<input type="submit" value="Entrar">
 
-				</form>
 
 				<hr>
 
@@ -152,48 +199,8 @@
 					<a href="#">Cancelar Pedido</a>
 					<button>Continuar comprando</button>
 				</div>
+			</form>
 
-			</section>
-
-			<section id="order-summary">
-				<h2 class="order-title">Resumo do pedido</h2>
-				<img src="./assets/img/mouse.png" alt="Imagem do pedido">
-
-				<div class="description">
-					<p class="description-title">Mouse Gamer Readragon</p>
-					<div class="count-content">
-						<p class="price">R$ 15,00</p>
-
-						<div class="count">
-							<i class="fa-solid fa-minus"></i>
-							<p class="value">2</p>
-							<i class="fa-solid fa-plus"></i>
-						</div>
-
-					</div>
-
-					<div class="discount-input">
-						<input type="text" placeholder="Cupom de desconto">
-						<button class="btn-apply">Aplicar</button>
-					</div>
-
-					<div class="table-prices">
-						<div class="tax">
-							<p>Taxa</p>
-							<p>R$ 5,40</p>
-						</div>
-						<div class="shipping">
-							<p>Envio</p>
-							<p>Grátis</p>
-						</div>
-						<div class="total">
-							<p>Total</p>
-							<p>R$ 30,44</p>
-						</div>
-					</div>
-				</div>
-
-			</section>
 
 		</div>
 
