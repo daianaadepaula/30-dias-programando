@@ -135,6 +135,57 @@
 					</div>
 				</form>
 
+				<!-- detalhes do pagamento -->
+
+				<form id="payment">
+					<div class="details-payment">
+						<h2>Detalhes do pagamento</h2>
+						<label for="address">Usar o cartão salvo</label>
+						<select name="options-name" id="">
+							<option value="Iuri Souza Silva, 736327">Iuri Souza Silva, 736327</option>
+							<option value="Flavio Carlos Santos, 295929">Flávio Carlos Santos, 295929</option>
+							<option value="Amanda Carmago de Azevedo, 9043010">Amanda Carmago de Azevedo, 9043010</option>
+						</select>
+
+						<label for="name-card">Nome no cartão</label>
+						<input type="text" name="name-card" id="" value="Iuri Souza Silva">
+
+						<label for="number-card">Número do cartão</label>
+						<input type="number" name="number-card" id="" value="123-456-789/0">
+
+						<div class="number-cvc">
+							<div>
+								<label for="expiration">Expiração</label>
+
+								<div class="details-number">
+									<input type="number" name="expiration" id="" value="03">
+									<span>/</span>
+									<input type="number" name="expiration" id="" value="24">
+								</div>
+							</div>
+
+							<div>
+								<label for="cvc">CVC</label>
+								<input type="number" name="cvc" id="" value="24">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="btn-subscription">
+						<a href="#">Registre-se para conta</a>
+						<button type="submit">Entrar</button>
+					</div>
+
+					<hr>
+
+					<div class="btn-buy">
+						<a href="#">Cancelar Pedido</a>
+						<button type="submit">Continuar comprando</button>
+					</div>
+
+				</form>
+
 				<!-- resumo do pedido -->
 
 				<div id="order-summary">
@@ -176,46 +227,6 @@
 					</div>
 				</div>
 			</section>
-
-
-
-			<!-- detalhes de pagamento -->
-
-			<form id="payment">
-				<h2>Detalhes de envio</h2>
-				<label for="address">Usar o cartão salvo</label>
-				<select name="options-name" id="">
-					<option value="Iuri Souza Silva, 736327">Iuri Souza Silva, 736327</option>
-					<option value="Flavio Carlos Santos, 295929">Flávio Carlos Santos, 295929</option>
-					<option value="Amanda Carmago de Azevedo, 9043010">Amanda Carmago de Azevedo, 9043010</option>
-				</select>
-
-				<label for="name-card">Nome no cartão</label>
-				<input type="text" name="name-card" id="" value="Iuri Souza Silva">
-
-				<label for="number-card">Número do cartão</label>
-				<input type="number" name="number-card" id="" value="123-456-789/0">
-
-				<label for="expiration">Expiração</label>
-				<input type="number" name="expiration" id="" value="03"><span>/</span>
-				<input type="number" name="expiration" id="" value="24">
-
-				<label for="cvc">CVC</label>
-				<input type="number" name="cvc" id="" value="24">
-
-
-				<p>Registre-se para conta</p>
-				<input type="submit" value="Entrar">
-
-
-				<hr>
-
-				<div>
-					<a href="#">Cancelar Pedido</a>
-					<button>Continuar comprando</button>
-				</div>
-			</form>
-
 
 		</div>
 
