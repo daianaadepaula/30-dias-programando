@@ -1,5 +1,5 @@
 #account,
-#shipping {
+#payment {
   display: none;
 }
 
@@ -78,8 +78,7 @@ main {
   justify-content: center;
   width: 100vw;
   max-width: 1920px;
-  height: calc(100vh - 80px);
-  padding: 10px;
+  padding: 0 10px;
 }
 
 main .container {
@@ -88,7 +87,42 @@ main .container {
   justify-content: space-between;
   width: 1440px;
   max-width: 1280px;
-  height: 100%;
+}
+
+/* menu */
+.container-nav {
+	display: flex;
+	align-items: center;
+  width: 1440px;
+  max-width: 1280px;
+  height: 150px;
+}
+
+.container-nav .container-list {
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+	width: 500px;
+  height: 30px;
+}
+
+.container-nav .container-list li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--dark-10);
+}
+
+.container-nav .container-list li a.active{
+	color: var(--brand-color);
+}
+
+.container-nav .container-list hr{
+	width: 12px;
+	border: 1px solid var(--dark-10);
 }
 
 /* resumo do pedido */
