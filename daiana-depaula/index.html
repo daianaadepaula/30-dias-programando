@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="./assets/css/variables.css">
 	<link rel="stylesheet" href="./assets/css/headerandordersummary.css">
 	<link rel="stylesheet" href="./assets/css/form.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
@@ -40,8 +41,23 @@
 			</div>
 
 			<div class="header-cart">
-				<p class="account-cart">Conta <i class="fa-solid fa-chevron-down"></i></p>
-				<p class="items-cart">2 items <i class="fa-solid fa-cart-shopping"></i></p>
+				<span>
+					<a href="#" class="account-cart">Conta </a>
+					<i class="fa-solid fa-chevron-down"></i>
+				</span>
+
+					<span>
+						<a href="#" class="items-cart">2 items</a>
+						<i class="fa-solid fa-cart-shopping"></i>
+					</span>
+
+					<span id="header-acco-menu">
+						<i class="fa-solid fa-user"></i>
+					</span>
+
+				<span id="header-menu">
+					<i class="fa-solid fa-bars"></i>
+				</span>
 			</div>
 		</nav>
 	</header>
@@ -189,43 +205,44 @@
 
 				</form>
 
-				<!-- resumo do pedido -->
+			</section>
 
-				<div id="order-summary">
-					<h2 class="order-title">Resumo do pedido</h2>
-					<img src="./assets/img/mouse.png" alt="Imagem do pedido">
+			<!-- resumo do pedido -->
 
-					<div class="description">
-						<p class="description-title">Mouse Gamer Readragon</p>
-						<div class="count-content">
-							<p class="price">R$ 15,00</p>
+			<section id="order-summary">
+				<h2 class="order-title">Resumo do pedido</h2>
+				<img src="./assets/img/mouse.png" alt="Imagem do pedido">
 
-							<div class="count">
-								<i class="fa-solid fa-minus"></i>
-								<p class="value">2</p>
-								<i class="fa-solid fa-plus"></i>
-							</div>
+				<div class="description">
+					<p class="description-title">Mouse Gamer Readragon</p>
+					<div class="count-content">
+						<p class="price">R$ 15,00</p>
 
+						<div class="count">
+							<i class="fa-solid fa-minus"></i>
+							<p class="value">2</p>
+							<i class="fa-solid fa-plus"></i>
 						</div>
 
-						<div class="discount-input">
-							<input type="text" placeholder="Cupom de desconto">
-							<button class="btn-apply">Aplicar</button>
-						</div>
+					</div>
 
-						<div class="table-prices">
-							<div class="tax">
-								<p>Taxa</p>
-								<p>R$ 5,40</p>
-							</div>
-							<div class="shipping">
-								<p>Envio</p>
-								<p>Grátis</p>
-							</div>
-							<div class="total">
-								<p>Total</p>
-								<p>R$ 30,44</p>
-							</div>
+					<div class="discount-input">
+						<input type="text" placeholder="Cupom de desconto">
+						<button class="btn-apply">Aplicar</button>
+					</div>
+
+					<div class="table-prices">
+						<div class="tax">
+							<p>Taxa</p>
+							<p>R$ 5,40</p>
+						</div>
+						<div class="shipping">
+							<p>Envio</p>
+							<p>Grátis</p>
+						</div>
+						<div class="total">
+							<p>Total</p>
+							<p>R$ 30,44</p>
 						</div>
 					</div>
 				</div>

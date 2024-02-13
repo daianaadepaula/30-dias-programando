@@ -1,0 +1,55 @@
+@media (max-width: 900px) {
+  .header,
+  main,
+  .container-nav,
+  .container-nav .container-list {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header-menu,
+  .account-cart,
+  .fa-chevron-down,
+  .items-cart {
+    display: none;
+  }
+
+  .header-cart #header-menu,
+  .header-cart #header-acco-menu {
+    display: block;
+  }
+  
+  main .container {
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  
+  section,
+  #order-summary {
+    width: 95vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #order-summary .description,
+  #order-summary .order-title {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  #order-summary .order-title {
+    margin: 40px 0;
+    width: 95vw;
+  }
+
+  .description .discount-input input {
+    width: 77vw;
+  }
+
+  form {
+    width: 95vw;
+  }
+}

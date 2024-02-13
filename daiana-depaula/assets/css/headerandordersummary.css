@@ -26,7 +26,7 @@
 .header-nav div {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 30px;
 }
 
 .header-nav div .logo {
@@ -52,22 +52,32 @@
 .header-cart {
   display: flex;
   align-items: center;
-  gap: 64px;
 }
 
-.header-cart p {
+.header-cart span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-cart span a {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 19px;
   color: var(--dark-20);
   text-align: center;
+  /* display: none; */
 }
 
-.header-cart p i {
+.header-cart span i {
   width: 20px;
-  height: 20px;
   color: var(--dark-20);
   margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.header-cart #header-menu, .header-cart #header-acco-menu {
+  display: none;
 }
 
 /* main */
@@ -83,7 +93,6 @@ main {
 
 main .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 1440px;
   max-width: 1280px;
@@ -91,8 +100,8 @@ main .container {
 
 /* menu */
 .container-nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
   width: 1440px;
   max-width: 1280px;
   height: 150px;
@@ -101,34 +110,36 @@ main .container {
 .container-nav .container-list {
   display: flex;
   align-items: center;
-	justify-content: space-between;
-	width: 500px;
+  justify-content: space-between;
+  width: 500px;
   height: 30px;
 }
 
-.container-nav .container-list li a{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	font-size: 1.8rem;
-	font-weight: 500;
-	color: var(--dark-10);
+.container-nav .container-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-10);
 }
 
-.container-nav .container-list li a.active{
-	color: var(--brand-color);
+.container-nav .container-list li a.active {
+  color: var(--brand-color);
 }
 
-.container-nav .container-list hr{
-	width: 12px;
-	border: 1px solid var(--dark-10);
+.container-nav .container-list hr {
+  width: 12px;
+  border: 1px solid var(--dark-10);
 }
 
 /* resumo do pedido */
 #order-summary {
   height: 100%;
   width: 484px;
+  flex-direction: column;
+  justify-content: start;
 }
 
 #order-summary .order-title {
