@@ -11,7 +11,9 @@
   .header-menu,
   .account-cart,
   .fa-chevron-down,
-  .items-cart {
+  .items-cart,
+  .btn-subscription,
+  hr {
     display: none;
   }
 
@@ -19,13 +21,13 @@
   .header-cart #header-acco-menu {
     display: block;
   }
-  
+
   main .container {
     width: 95vw;
     margin: 0 auto;
     flex-direction: column;
   }
-  
+
   section,
   #order-summary {
     width: 95vw;
@@ -51,5 +53,15 @@
 
   form {
     width: 95vw;
+  }
+
+  /*  */
+  .btn-buy {
+    flex-direction: column-reverse;
+  }
+
+  .btn-buy a {
+    text-align: center;
+    background-color: #ebd2cf;
   }
 }
