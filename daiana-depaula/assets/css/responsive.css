@@ -76,4 +76,43 @@
   main .container {
     width: 90vw;
   }
+
+  .container-nav .container-list {
+    width: 80vw;
+  }
+
+  .container-nav .container-list li a {
+    font-size: 1.5rem;
+    gap: 5px;
+  }
+
+  hr {
+    display: block;
+  }
+
+  section,
+  #order-summary {
+    width: 90vw;
+  }
+
+  #order-summary .description,
+  #order-summary .order-title {
+    width: 90vw;
+  }
+
+  #order-summary .order-title {
+    width: 90vw;
+  }
+
+  .description .discount-input input {
+    width: 59vw;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  #order-summary {
+    margin-bottom: 40px;
+  }
 }
