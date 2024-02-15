@@ -65,3 +65,9 @@
     background-color: #ebd2cf;
   }
 }
+
+@media (max-width: 500px) {
+  .header {
+    width: 90vw;
+  }
+}
