@@ -3,8 +3,8 @@
   display: none;
 }
 
-body{
-	background-color: var(--bg);
+body {
+  background-color: var(--bg);
 }
 
 /* header */
@@ -80,8 +80,14 @@ body{
   cursor: pointer;
 }
 
-.header-cart #header-menu, .header-cart #header-acco-menu {
+.header-cart #header-menu,
+.header-cart #header-acco-menu {
   display: none;
+}
+
+#toggle-mode i {
+  color: var(--toggle);
+  font-size: 1.6rem;
 }
 
 /* main */

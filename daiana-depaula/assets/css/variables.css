@@ -1,5 +1,5 @@
 :root {
-	--bg: #f9f9f9;
+  --bg: #f9f9f9;
   --brand-color: #2fbd6a;
   --dark-10: #2d3748;
   --dark-20: #4a5568;
@@ -7,17 +7,19 @@
   --dark-40: #f3eff3;
   --dark-50: #f9f9f9;
   --white: #ffffff;
-	--red: #D1402C;
+  --red: #d1402c;
+  --toggle: #439cea;
 }
 
 .dark-mode {
-	--bg: #302f2f;
+  --bg: #302f2f;
   --brand-color: #227946;
-  --dark-10: #6C69FA66;
-  --dark-20: #B2D5F4;
+  --dark-10: #6c69fa66;
+  --dark-20: #b2d5f4;
   --dark-30: #030081;
   --dark-40: #696767;
-  --dark-50: #F3EFEF;
+  --dark-50: #f3efef;
   --white: #ffffff;
-	--red: #F85F4A;
+  --red: #f85f4a;
+  --toggle: #ffc400;
 }
