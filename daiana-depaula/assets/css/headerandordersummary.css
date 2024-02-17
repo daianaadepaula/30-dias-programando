@@ -3,6 +3,10 @@
   display: none;
 }
 
+body{
+	background-color: var(--bg);
+}
+
 /* header */
 .header {
   display: flex;

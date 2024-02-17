@@ -62,7 +62,7 @@ form h2 {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--dark-10);
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .btn-subscription button {
@@ -91,8 +91,8 @@ hr {
   border-radius: 4px;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #d1402c;
-  background-color: var(--white);
+  color: var(--red);
+  background-color: transparent;
 }
 
 .btn-buy button {

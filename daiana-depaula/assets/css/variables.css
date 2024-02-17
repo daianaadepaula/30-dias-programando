@@ -1,4 +1,5 @@
 :root {
+	--bg: #f9f9f9;
   --brand-color: #2fbd6a;
   --dark-10: #2d3748;
   --dark-20: #4a5568;
@@ -6,4 +7,17 @@
   --dark-40: #f3eff3;
   --dark-50: #f9f9f9;
   --white: #ffffff;
+	--red: #D1402C;
+}
+
+.dark-mode {
+	--bg: #302f2f;
+  --brand-color: #227946;
+  --dark-10: #6C69FA66;
+  --dark-20: #B2D5F4;
+  --dark-30: #030081;
+  --dark-40: #696767;
+  --dark-50: #F3EFEF;
+  --white: #ffffff;
+	--red: #F85F4A;
 }
